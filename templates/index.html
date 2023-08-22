@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="login">
+         <h1>Sentiment Analysis on Movie Reviews</h1>
+     
+         <form action="/predict" method="POST">
+
+             <textarea name="review_text" rows = 10 placeholder="Enter movie review"></textarea>
+              <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+             <br>
+             <br>
+             <h5>{{ sentiment }}</h5>
+         </form>
+    </div>
+</body>
+</html>
